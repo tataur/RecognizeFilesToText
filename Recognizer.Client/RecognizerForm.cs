@@ -1,5 +1,6 @@
 ﻿using Recognizer.Library;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Recognizer.Client
@@ -12,7 +13,7 @@ namespace Recognizer.Client
             button_selectFile.Click += buttonSelectFile_Click;
         }
 
-        public string FilePath { get { return textBox_openFile.Text; } }
+        public string FilePath { get { return textBox_openFilePath.Text; } }
 
         public string Content { get { return textBox_content.Text; } set { textBox_content.Text = value; } }
 
@@ -24,27 +25,34 @@ namespace Recognizer.Client
             dialog.Filter = "Текстовые файлы|*.txt|PDF файлы|*.pdf|Изображения|*.jpg,*.jpeg,*bmp,*.png|Все файлы|*.*";
             if(dialog.ShowDialog() == DialogResult.OK)
             {
-                textBox_openFile.Text = dialog.FileName;
-                CheckFileType(dialog);
-                
-                if (FileOpenClick != null)
-                {
-                    FileOpenClick(this, EventArgs.Empty);
-                }
+                textBox_openFilePath.Text = dialog.FileName;
+                string extension = Path.GetExtension(dialog.FileName);
+                CheckFileType(extension);
+
+                FileOpenClick?.Invoke(this, EventArgs.Empty);
             }
         } 
 
-        private void CheckFileType(OpenFileDialog file)
+        private void CheckFileType(string extension)
         {
-            if (file.FileName.Contains(".pdf"))
+            if (extension == ".pdf")
             {
                 PdfFileManager pdfRecognizer = new PdfFileManager();
                 CreateMainViewer(pdfRecognizer);
             }
-            else if (file.FileName.Contains(".txt"))
+            else if (extension == ".txt")
             {
                 TextFileManager txtRecognizer = new TextFileManager();
                 CreateMainViewer(txtRecognizer);
+            }
+            else if (extension == ".jpg" || extension == ".jpeg" || extension == ".bmp" || extension == ".png")
+            {
+                ImageFileManager imageRecognizer = new ImageFileManager();
+                CreateMainViewer(imageRecognizer);
+            }
+            else
+            {
+                MessageBox.Show("Неизвестный файл");
             }
         }
 
@@ -52,12 +60,5 @@ namespace Recognizer.Client
         {
             var viewer = new MainViewer<string>(this, recognizer);
         }
-    }
-
-    public interface IForm<T>
-    {
-        T FilePath { get; }
-        string Content { get; set; }
-        event EventHandler FileOpenClick;
     }
 }

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImageFileManager.cs" />
     <Compile Include="PdfFileManager.cs" />
     <Compile Include="TextFileManager.cs" />
     <Compile Include="IRecognizer.cs" />

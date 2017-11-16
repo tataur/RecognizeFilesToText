@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox_openFile = new System.Windows.Forms.TextBox();
+            this.textBox_openFilePath = new System.Windows.Forms.TextBox();
             this.textBox_content = new System.Windows.Forms.TextBox();
             this.button_selectFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,12 +45,12 @@
             // 
             // textBox_openFile
             // 
-            this.textBox_openFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox_openFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_openFile.Location = new System.Drawing.Point(16, 29);
-            this.textBox_openFile.Name = "textBox_openFile";
-            this.textBox_openFile.Size = new System.Drawing.Size(358, 20);
-            this.textBox_openFile.TabIndex = 2;
+            this.textBox_openFilePath.Location = new System.Drawing.Point(16, 29);
+            this.textBox_openFilePath.Name = "textBox_openFile";
+            this.textBox_openFilePath.Size = new System.Drawing.Size(358, 20);
+            this.textBox_openFilePath.TabIndex = 2;
             // 
             // textBox_content
             // 
@@ -80,7 +80,7 @@
             this.ClientSize = new System.Drawing.Size(576, 309);
             this.Controls.Add(this.button_selectFile);
             this.Controls.Add(this.textBox_content);
-            this.Controls.Add(this.textBox_openFile);
+            this.Controls.Add(this.textBox_openFilePath);
             this.Controls.Add(this.label1);
             this.Name = "RecognizerForm";
             this.Text = "Form1";
@@ -91,7 +91,7 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_openFile;
+        private System.Windows.Forms.TextBox textBox_openFilePath;
         private System.Windows.Forms.TextBox textBox_content;
         private System.Windows.Forms.Button button_selectFile;
     }
