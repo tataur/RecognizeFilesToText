@@ -20,11 +20,6 @@ namespace Recognizer.Client
 
             RecognizerForm form = new RecognizerForm();
 
-            TextFileManager txtRecognizer = new TextFileManager();
-            PdfFileManager pdfRecognizer = new PdfFileManager();
-
-            MainViewer viewer = new MainViewer(form, pdfRecognizer);
-
             Application.Run(form);
         }
     }

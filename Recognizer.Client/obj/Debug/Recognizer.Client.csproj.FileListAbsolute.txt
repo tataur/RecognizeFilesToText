@@ -2,7 +2,9 @@ C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\Recognizer.Client.exe
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\Recognizer.Client.pdb
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\Recognizer.Library.dll
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\itextsharp.dll
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\Recognizer.Library.pdb
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\itextsharp.xml
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\obj\Debug\Recognizer.Client.csprojResolveAssemblyReference.cache
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\obj\Debug\Recognizer.Client.RecognizerForm.resources
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\obj\Debug\Recognizer.Client.Properties.Resources.resources
@@ -10,5 +12,3 @@ C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\obj\Debug
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\obj\Debug\Recognizer.Client.csproj.CoreCompileInputs.cache
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\obj\Debug\Recognizer.Client.exe
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\obj\Debug\Recognizer.Client.pdb
-C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\itextsharp.dll
-C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Client\bin\Debug\itextsharp.xml
