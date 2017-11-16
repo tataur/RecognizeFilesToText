@@ -1,0 +1,8 @@
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\bin\Debug\Recognizer.Library.dll
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\bin\Debug\Recognizer.Library.pdb
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.csprojResolveAssemblyReference.cache
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.csproj.CoreCompileInputs.cache
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.dll
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.pdb
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\bin\Debug\itextsharp.dll
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\bin\Debug\itextsharp.xml

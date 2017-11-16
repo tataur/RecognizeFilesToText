@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recognizer.Library;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,15 @@ namespace Recognizer.Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            RecognizerForm form = new RecognizerForm();
+
+            TextFileManager txtRecognizer = new TextFileManager();
+            PdfFileManager pdfRecognizer = new PdfFileManager();
+
+            MainViewer viewer = new MainViewer(form, pdfRecognizer);
+
+            Application.Run(form);
         }
     }
 }

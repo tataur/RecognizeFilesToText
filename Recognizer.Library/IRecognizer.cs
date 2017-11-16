@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Recognizer.Library
 {
-    interface IRecognizer
+    public interface IRecognizer
     {
-        
+        string Recognize(string filePath); 
     }
 }
