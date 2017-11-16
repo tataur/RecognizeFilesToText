@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Recognizer.Client
 {
-    public partial class RecognizerForm : Form, IForm
+    public partial class RecognizerForm : Form, IForm<string>
     {
         public RecognizerForm()
         {
@@ -48,15 +48,15 @@ namespace Recognizer.Client
             }
         }
 
-        private void CreateMainViewer(IRecognizer recognizer)
+        private void CreateMainViewer(IRecognizer<string> recognizer)
         {
-            MainViewer viewer = new MainViewer(this, recognizer);
+            var viewer = new MainViewer<string>(this, recognizer);
         }
     }
 
-    public interface IForm
+    public interface IForm<T>
     {
-        string FilePath { get; }
+        T FilePath { get; }
         string Content { get; set; }
         event EventHandler FileOpenClick;
     }

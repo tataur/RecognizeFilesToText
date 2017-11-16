@@ -3,12 +3,12 @@ using System;
 
 namespace Recognizer.Client
 {
-    public class MainViewer
+    public class MainViewer<T>
     {
-        private readonly IForm _form;
-        private readonly IRecognizer _recognizer;
+        private readonly IForm<T> _form;
+        private readonly IRecognizer<T> _recognizer;
 
-        public MainViewer(IForm form, IRecognizer recognizer)
+        public MainViewer(IForm<T> form, IRecognizer<T> recognizer)
         {
             _form = form;
             _recognizer = recognizer;
@@ -18,7 +18,7 @@ namespace Recognizer.Client
 
         private void _view_FileOpenClick(object sender, EventArgs e)
         {
-            string filePath = _form.FilePath;
+            T filePath = _form.FilePath;
             string content = _recognizer.Recognize(filePath);
             _form.Content = content;
         }

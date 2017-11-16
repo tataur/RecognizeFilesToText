@@ -5,3 +5,4 @@ C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\bin\Debu
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.csproj.CoreCompileInputs.cache
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.dll
 C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.pdb
+C:\Users\Sveta\Documents\GitHub\RecognizeFilesToText\Recognizer.Library\obj\Debug\Recognizer.Library.csprojResolveAssemblyReference.cache

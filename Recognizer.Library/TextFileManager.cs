@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Recognizer.Library
 {
-    public class TextFileManager : IRecognizer
+    public class TextFileManager : IRecognizer<string>
     {
         private readonly Encoding _encoding = Encoding.GetEncoding(1251);
 

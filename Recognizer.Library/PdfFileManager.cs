@@ -5,7 +5,7 @@ using iTextSharp.text.pdf.parser;
 
 namespace Recognizer.Library
 {
-    public class PdfFileManager : IRecognizer
+    public class PdfFileManager : IRecognizer<string>
     {
         public string Recognize(string filePath)
         {
